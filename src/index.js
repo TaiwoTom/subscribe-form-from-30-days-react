@@ -1,17 +1,58 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const heading = "SUBSCRIBE";
+const subtitle = "Sign up with your email address to receive news and updates.";
+
+const title = (
+  <div className="title">
+    <h1>{heading}</h1>
+  </div>
+);
+const subTitle = (
+  <div className="subtitle">
+    <h4>{subtitle}</h4>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const form = (
+  <div>
+    <form>
+      <input
+        type="text"
+        className="firstname"
+        name="firstname"
+        placeholder="First name"
+      ></input>
+      <input
+        type="text"
+        className="lastname"
+        name="lastname"
+        placeholder="Last name"
+      ></input>
+      <input
+        type="text"
+        className="email"
+        name="email"
+        placeholder="Email"
+      ></input>
+      <div className="btn">
+        <button type="button">Subscribe</button>
+      </div>
+    </form>
+  </div>
+);
+
+const jsxElement = (
+  <div className="box1">
+    <div className="box2">
+      {title}
+      {subTitle}
+      {form}
+    </div>
+  </div>
+);
+const rootElement = document.getElementById("root");
+
+ReactDOM.render(jsxElement, rootElement);
