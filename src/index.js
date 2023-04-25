@@ -55,4 +55,4 @@ const JsxElement = (
 );
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(JsxElement, rootElement);
+ReactDOM.render(<JsxElement/>, rootElement);
