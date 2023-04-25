@@ -5,18 +5,18 @@ import "./index.css";
 const heading = "SUBSCRIBE";
 const subtitle = "Sign up with your email address to receive news and updates.";
 
-const title = (
+const Title = () => (
   <div className="title">
     <h1>{heading}</h1>
   </div>
 );
-const subTitle = (
+const SubTitle = () => (
   <div className="subtitle">
     <h4>{subtitle}</h4>
   </div>
 );
 
-const form = (
+const Form = () => (
   <div>
     <form>
       <input
@@ -44,15 +44,15 @@ const form = (
   </div>
 );
 
-const jsxElement = (
+const JsxElement = (
   <div className="box1">
     <div className="box2">
-      {title}
-      {subTitle}
-      {form}
+      <Title/>
+      <SubTitle/>
+      <Form/>
     </div>
   </div>
 );
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(jsxElement, rootElement);
+ReactDOM.render(JsxElement, rootElement);
