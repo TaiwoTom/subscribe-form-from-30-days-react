@@ -44,7 +44,7 @@ const Form = () => (
   </div>
 );
 
-const JsxElement = (
+const JsxElement = () => (
   <div className="box1">
     <div className="box2">
       <Title/>
