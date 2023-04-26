@@ -2,37 +2,44 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-const heading = "SUBSCRIBE";
-const subtitle = "Sign up with your email address to receive news and updates.";
 
-const Title = () => (
+const Title = (props) => {
+  return(
   <div className="title">
-    <h1>{heading}</h1>
+    <h1>{props.heading}</h1>
   </div>
-);
-const SubTitle = () => (
+  )
+};
+const SubTitle = (props) => {
+  return(
   <div className="subtitle">
-    <h4>{subtitle}</h4>
+    <h4>{props.subtitle}</h4>
   </div>
-);
+  )
+};
 
-const Form = () => (
+const Form = ({
+  data: {text,
+  },
+}) => {
+
+  return (
   <div>
     <form>
       <input
-        type="text"
+        type={text}
         className="firstname"
         name="firstname"
         placeholder="First name"
       ></input>
       <input
-        type="text"
+        type={text}
         className="lastname"
         name="lastname"
         placeholder="Last name"
       ></input>
       <input
-        type="text"
+        type={text}
         className="email"
         name="email"
         placeholder="Email"
@@ -42,17 +49,26 @@ const Form = () => (
       </div>
     </form>
   </div>
-);
+  )
+};
 
-const JsxElement = () => (
+const JsxElement = () => {
+  const heading = "SUBSCRIBE";
+  const subtitle = "Sign up with your email address to receive news and updates.";
+  const data = {
+    text: "text",
+  }
+  
+  return (
   <div className="box1">
     <div className="box2">
-      <Title/>
-      <SubTitle/>
-      <Form/>
+      <Title heading = {heading}/>
+      <SubTitle subtitle = {subtitle}/>
+      <Form data= {data}/>
     </div>
   </div>
-);
+  )
+};
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(<JsxElement/>, rootElement);
