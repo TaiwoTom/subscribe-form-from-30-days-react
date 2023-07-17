@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/subscribe-form-from-30-days-react/static/css/main.688f06b9.css",
-    "main.js": "/subscribe-form-from-30-days-react/static/js/main.7f515d30.js",
+    "main.css": "/subscribe-form-from-30-days-react/static/css/main.e761b672.css",
+    "main.js": "/subscribe-form-from-30-days-react/static/js/main.6d16fe7e.js",
     "static/media/twitterlogo.png": "/subscribe-form-from-30-days-react/static/media/twitterlogo.c9b267133aa2e6f7eb23.png",
     "index.html": "/subscribe-form-from-30-days-react/index.html",
-    "main.688f06b9.css.map": "/subscribe-form-from-30-days-react/static/css/main.688f06b9.css.map",
-    "main.7f515d30.js.map": "/subscribe-form-from-30-days-react/static/js/main.7f515d30.js.map"
+    "main.e761b672.css.map": "/subscribe-form-from-30-days-react/static/css/main.e761b672.css.map",
+    "main.6d16fe7e.js.map": "/subscribe-form-from-30-days-react/static/js/main.6d16fe7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.688f06b9.css",
-    "static/js/main.7f515d30.js"
+    "static/css/main.e761b672.css",
+    "static/js/main.6d16fe7e.js"
   ]
 }
